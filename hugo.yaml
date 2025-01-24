@@ -22,18 +22,18 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -157,7 +157,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      Hi there! I'm a Ph.D. candidate at the University of Auckland, where I’m researching human-centric cybersecurity. My focus is on developing AI techniques, particularly natural language processing (NLP) and GenAI, to translate high-level requirements into enforceable access control policies. I’m also dedicated to making cybersecurity systems more usable, ensuring people interact with them effectively and make fewer mistakes.
+      Hi there! I'm a final year Ph.D. candidate at the University of Auckland, where I’m researching human-centric cybersecurity. My focus is on developing AI techniques, particularly natural language processing (NLP) and GenAI, to translate high-level requirements into enforceable access control policies. I’m also dedicated to making cybersecurity systems more usable, ensuring people interact with them effectively and make fewer mistakes.
 
       Before diving into academia, I worked as a software engineer at H2O.ai, building cutting-edge AI applications and developing robust testing frameworks. Prior to that, I was a backend engineer at ADL, crafting APIs with Java and Spring Boot.
 
@@ -178,8 +178,24 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Graduate Teaching Assistant"
+        company: "University of Auckland"
+        companyUrl: "https://www.auckland.ac.nz/"
+        date: "Oct 2022 - Present"
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
+        content: |
+          While conducting research in my Ph.D., I am currently working as a graduate teaching assistant of the School of Computer Science, University of Auckland. I teach, 
+          
+          - CS718 - Programming for Industry: Focusing on object oriented programming (OOP) as well as data structures and algorithms (DSA) in Java.
+          - CS719 Programming with Web Technologies: Focusing on developing full-stack applications using JavaScript, Svelte, and SQL
+
+          Technologies I use to teach students are, Java, JavaScript, SQL
+
       - job: "Software Engineer"
-        company: "H2O.ai"
+        company: "H2O AI"
         companyUrl: "https://h2o.ai/"
         date: "June 2022 - Oct 2022"
         # featuredLink:
@@ -233,42 +249,62 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Ph.D. in Computer Science"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "University of Auckland"
+          url: "https://www.auckland.ac.nz/"
+        date: "2022 - 2025"
+        # GPA: "3.8 out of 5.0"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          **Thesis: Access Control Policy Generation from High-level Requirement Specifications**  
+
+          - Employed advanced deep learning and natural language processing techniques like large language models (LLMs) and retrieval augmented generation (RAG) to develop a novel relaible access control policy generation and verification pipline.
+          - Introduced and developed a reliable conflict detection and resolution mechanism using graph neural networks (GNN).
+          - Designed and empirically evaluated a usable access control policy authoring interface usability principles and explainable security concepts, the interface simplifies policy generation, reduces errors, and enhances user satisfaction.
+      - title: "Bachelor of Science (Hons.) in Electronics and Telecommunication Engineering"
         school:
-          name: "Massachusetts Institute of Technology"
+          name: "University of Moratuwa"
           url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+        date: "2016 - 2021"
+        GPA: "3.92 out of 4.2"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          **Thesis: Object Detection, Tracking and Suspicious Activity Recognition for Maritime Surveillance using Thermal Vision**
+
+          - Won 2nd runner up in National ICT Awards (NBQSA) - Best university project
+          - Developed an algorithm for Object Detection, Tracking and Suspicious Activity Recognition for Maritime Surveillance using Thermal Vision.
+          - Developed a novel, state-of-the-art spatio-temporal activity detection framework utilizing key-point based detection architecture.
+          - The developed system has the ability to do surveillance tasks with unmanned vessels and help navy personnel to detect suspicious activities in the sea.
 
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            - Chess
+            - Badminton
         featuredLink:
           enable: true
           name: "My academic record"
           url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+      # - title: "High School"
+      #   school:
+      #     name: "Thomas Jefferson High School for Science and Technology."
+      #     url: "https://example.org"
+      #   GPA: "4.2 out of 5.0"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+
+  publications:
+    enable: true
+    items:
+      - title: Conferences
+        content: |-
+          - **Jayasundara, S. H.**, Arachchilage, N. A. G., & Russello, G. (2024). Vision:“AccessFormer”: Feedback-Driven Access Control Policy Generation Framework. In Symposium on Usable Security and Privacy (USEC).
+          - Abeywardena, K., Sumanthiran, S., **Jayasundara, S. H.**, Karunasena, S., Rodrigo, R., & Jayasekara, P. (2023, September). KORSAL: Key-Point Based Online Real-Time Spatio-Temporal Action Localization. In 2023 IEEE Canadian Conference on Electrical and Computer Engineering (CCECE) (pp. 279-284). IEEE.
+      - title: Journals
+        content: |-
+          - **Jayasundara, S. H.**, Gamagedara Arachchilage, N. A., & Russello, G. (2024). SoK: Access Control Policy Generation from High-level Natural Language Requirements. ACM Computing Surveys, 57(4), 1-37.
+      - title: Preprints
+        content: |-
+          - **Jayasundara, S. H.**, Gamagedara Arachchilage, N. A., & Russello, G. (2024). RAGent: Retrieval-based Access Control Policy Generation. arXiv e-prints, arXiv-2409.
+
 
   # Achievements
   achievements:
@@ -297,50 +333,60 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: RAGent
+        content: Retrieval-based Access Control Policy Generation Framework
+        image: /images/ragent1.jpg
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Paper
+          link: https://arxiv.org/pdf/2409.07489
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "Generative AI"
+          - "LLM"
+          - "RAG"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/accessframework/RAGent
+          - icon: fa fa-envelope
+            url: mailto:sakunaj1996@gmail.com
+          
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Ragatouille
+        content: |-
+          The ultimate guide to mastering retrieval augmented generation (RAG) with LangChain.
+
+          Featured in LangChain LinkedIn page!.
+        image: /images/raglogo1.jpg
         featured:
-          name: Demo
+          name: Website
           link: https://django-converter.herokuapp.com
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Python"
+          - "RAG"
+          - "LangChain"
+          - "Jupyter"
+          - "Neo4J"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/sakunaharinda/ragatouille-book
+          - icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/feed/update/urn:li:activity:7213564540918071297/
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
+      - title: KORSAL
+        content: Key-point Detection based Online Real-Time Spatio-Temporal Action Localization
         image: /images/projects/profile2.jpg
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Paper
+          link: https://ieeexplore.ieee.org/document/10288973/
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Activity Detection"
+          - "Computer Vision"
+          - "Object Tracking"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/Kalana304/KORSAL
 
   #Contact
   contact:

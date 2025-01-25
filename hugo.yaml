@@ -144,12 +144,14 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
+          url: https://github.com/sakunaharinda
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/sakuna-harinda/
+        - icon: fab fa-researchgate
+          url: https://www.researchgate.net/profile/Sakuna-Jayasundara
       customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+        # - icon: /scholar.png
+        #   url: "https://scholar.google.com/citations?user=_2tM_-UAAAAJ&hl=en"
 
   # About
   about:
@@ -308,7 +310,7 @@ params:
 
   # Achievements
   achievements:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Google kickstart runner
@@ -376,7 +378,7 @@ params:
 
       - title: KORSAL
         content: Key-point Detection based Online Real-Time Spatio-Temporal Action Localization
-        image: /images/projects/profile2.jpg
+        image: /images/korsal.png
         featured:
           name: Paper
           link: https://ieeexplore.ieee.org/document/10288973/
@@ -394,7 +396,7 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:sakunaj1996@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -403,18 +405,19 @@ params:
     #   messageRows: 5
 
   footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
+    # recentPosts:
+    #   path: "blogs"
+    #   count: 3
+    #   title: Recent Posts
+    #   enable: true
+    #   disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/sakunaharinda
+      linkedin: https://www.linkedin.com/in/sakuna-harinda/
+      email: mailto:sakunaj1996@gmail.com
+      # twitter: https://twitter.com
+      # instagram: https://instagram.com
+      # facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:

@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://www.sakuna.xyz/
 languageCode: en-us
 title: "Sakuna Jayasundara"
 theme: hugo-profile
@@ -56,7 +56,7 @@ params:
   title: "Sakuna Jayasundara"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/logo.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -138,7 +138,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "https://drive.google.com/file/d/14C83PZu0kRqEyzYOnoVgkCnmZgWGjuBj/view?usp=sharing"
       download: true
       newPage: false
     socialLinks:
@@ -283,7 +283,7 @@ params:
         featuredLink:
           enable: true
           name: "My academic record"
-          url: "https://example.com"
+          url: "https://drive.google.com/file/d/1ADfQRgFG7C-SwmQ0HXlB66r069oJvH4t/view?usp=sharing"
       # - title: "High School"
       #   school:
       #     name: "Thomas Jefferson High School for Science and Technology."
@@ -371,6 +371,8 @@ params:
           - "Jupyter"
           - "Neo4J"
         links:
+          - icon: fa-solid fa-globe
+            url: https://www.sakuna.xyz/ragatouille-book/intro.html
           - icon: fab fa-github
             url: https://github.com/sakunaharinda/ragatouille-book
           - icon: fab fa-linkedin-in
